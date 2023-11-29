@@ -1,0 +1,111 @@
+---
+pagetitle: "Research Using R"
+format: 
+  revealjs:
+    theme: [default, style.scss]
+    slide-number: true
+    incremental: true
+    code-copy: true
+    code-link: true #using downlit pkg
+    code-line-numbers: false
+    transition: convex
+    background-transition: convex
+    progress: true
+    controls: true
+    touch: true
+knitr:
+  opts_chunk: 
+    echo: true
+    fig.retina: 3    
+---
+
+# [DOING RESEARCH<br>USING R]{.r-fit-text .navy-blue} {background-image="https://images.unsplash.com/photo-1508161250369-a7ecbdfb67fe?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size=cover background-position="100% 0%"}
+
+[Dr. AJAY KUMAR KOLI | SARA INSTITUTE | WORKSHOP AT MDU, ROHTAK | 1 & 2 DEC 2023]{.r-fit-text}
+
+```{r}
+#| label: packages-used
+#| echo: false
+#| warning: false
+#| message: false
+
+library(downlit) #to create link of r function
+library(tidyverse)
+library(palmerpenguins)
+```
+
+## Hello Everyone!!
+
+:::: {.columns}
+
+::: {.column width="40%"}
+<br>
+
+![](images/ajay.png)
+:::
+
+::: {.column width="60%"}
+
+<br>
+
+{{< fa circle-user >}} [Dr. Ajay Kumar Koli](https://koliajay.netlify.app/) 
+
+{{< fa award >}} Founder & Executive Director
+
+{{< fa play >}} [SARA Institute of Data Science](https://saraedu.netlify.app/)
+
+{{< fa brands twitter >}} [@sara_institute](https://twitter.com/sara_institute)
+
+{{< fa brands github >}} [Slide source code](https://github.com/koliajaykr/workshop-r-mdu.github.io)
+
+```{=html}
+<a class="github-button" href="https://github.com/koliajaykr/workshop-r-mdu.github.io" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this course on Github">Star this course on Github</a><script async defer src="https://buttons.github.io/buttons.js"></script>
+```
+:::
+
+::::
+
+## Workshop
+
+<br>
+
+:::: {.columns .center}
+
+::: {.column width="50%"}
+![<br>Maharshi Dayanand University Rohtak](images/mdu.png)
+:::
+
+::: {.column width="50%"}
+![SARA Institute of Data Science Sonipat](images/logo.png){width=50%}
+:::
+
+::::
+
+
+## Purpose 
+
+> To share reasons with you (and hopefully convince you) why you should conduct your research using R.
+
+## Research Influencer
+
+<br>
+
+::: {layout-ncol=2 .center}
+
+![Focus on Content](https://media0.giphy.com/media/l3nWhI38IWDofyDrW/giphy.gif?cid=ecf05e47p6ixb5zdcapti83ce4btewlcysoqtgv9jmpp3p6o&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+
+![Less clerical work](https://media1.giphy.com/media/llKJGxQ1ESmac/giphy.gif?cid=ecf05e47bmc75vggl780dgo5mjj3r753sej5cq7bcwa7xy67&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+
+:::
+
+##
+
+Day 1: More Content, Less Clerical.
+
+Day 2: Set Yourself Apart
+
+## More Content, Less Clerical
+
+## References
+
+- Title slide background image is from [Joanna Kosinska](https://unsplash.com/photos/white-baubles-and-sleigh-bells-0CQfTLOVTPU).

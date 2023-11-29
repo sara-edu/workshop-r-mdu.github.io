@@ -1,0 +1,53 @@
+/*-- scss:defaults --*/
+
+// audio
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Libre+Baskerville&display=swap');
+
+// bruno ace
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+// Michroma
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+// font style for the body text of the slides.
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+
+//
+// Color system
+//
+$white:          #ffffff !default;
+$navy-blue:      #003366 !default;
+$theme-red:      #E7553C !default;
+
+$presentation-heading-font: 'Audiowide', sans-serif;
+
+$font-family-sans-serif: "Sen", "sans-serif";
+
+$presentation-heading-color: $navy-blue;
+
+// link style.
+$link-color: $theme-red;
+$link-color-hover: lighten($link-color, 15%);
+$selection-bg: #007AF8;
+
+
+// alignment 
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.white {
+  color: $white;
+}
+
+.navy-blue {
+  color: $navy-blue;
+}
