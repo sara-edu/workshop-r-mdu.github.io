@@ -4,6 +4,7 @@ format:
   revealjs:
     theme: [default, style.scss]
     slide-number: true
+    logo: images/logo.png
     incremental: true
     code-copy: true
     code-link: true #using downlit pkg
@@ -11,15 +12,16 @@ format:
     transition: convex
     background-transition: convex
     progress: true
-    controls: true
+    #controls: true
     touch: true
+    fig-align: center
 knitr:
   opts_chunk: 
     echo: true
-    fig.retina: 3    
+    fig.retina: 3
 ---
 
-# [DOING RESEARCH<br>USING R]{.r-fit-text .navy-blue} {background-image="https://images.unsplash.com/photo-1508161250369-a7ecbdfb67fe?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size=cover background-position="100% 0%"}
+# [DOING RESEARCH<br>USING R]{.r-fit-text .navy-blue data-hide-slide-number="true"} {background-image="https://images.unsplash.com/photo-1508161250369-a7ecbdfb67fe?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size=cover background-position="100% 0%"}
 
 [Dr. AJAY KUMAR KOLI | SARA INSTITUTE | WORKSHOP AT MDU, ROHTAK | 1 & 2 DEC 2023]{.r-fit-text}
 
@@ -34,17 +36,18 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
-## Hello Everyone!!
+## 
+
+[Hello Everyone!!]{.theme-cursive .r-fit-text}
 
 :::: {.columns}
 
-::: {.column width="40%"}
-<br>
+::: {.column width="35%"}
 
 ![](images/ajay.png)
 :::
 
-::: {.column width="60%"}
+::: {.column width="65%"}
 
 <br>
 
@@ -56,16 +59,16 @@ library(palmerpenguins)
 
 {{< fa brands twitter >}} [@sara_institute](https://twitter.com/sara_institute)
 
-{{< fa brands github >}} [Slide source code](https://github.com/koliajaykr/workshop-r-mdu.github.io)
+{{< fa brands github >}} [Slide source code](https://github.com/sara-edu/workshop-r-mdu.github.io)
 
 ```{=html}
-<a class="github-button" href="https://github.com/koliajaykr/workshop-r-mdu.github.io" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this course on Github">Star this course on Github</a><script async defer src="https://buttons.github.io/buttons.js"></script>
+<a class="github-button" href="https://github.com/sara-edu/workshop-r-mdu.github.io" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this course on Github">Star this slide on Github</a><script async defer src="https://buttons.github.io/buttons.js"></script>
 ```
 :::
 
 ::::
 
-## Workshop
+## Workshop {.center}
 
 <br>
 
@@ -76,36 +79,1402 @@ library(palmerpenguins)
 :::
 
 ::: {.column width="50%"}
-![SARA Institute of Data Science Sonipat](images/logo.png){width=50%}
+![SARA Institute of Data Science Sonipat](images/sara.png){width=50%}
 :::
 
 ::::
 
 
-## Purpose 
+## Purpose
+
+<br>
 
 > To share reasons with you (and hopefully convince you) why you should conduct your research using R.
+
+## Research {.center}
+
+![](images/researcher.jpg){fig-align="center"}
+
+. . .
+
+[This is what we [think]{.theme-red} we do ...]{.r-fit-text}
+
+## Research {.center}
+
+[But this is what we [actually]{.theme-red} do]{.r-fit-text}
+
+![](images/researcher-sad.webp){fig-align="center"}
+
+## 🤯 Research Flowchart
+
+:::: {.columns .center}
+
+::: {.column width="25%"}
+MS Word
+
+![](images/word.png)
+:::
+
+::: {.column width="25%"}
+Excel
+
+![](images/excel.png)
+
+:::
+
+::: {.column width="25%"}
+PPTs
+
+![](images/ppt.png)
+:::
+
+::: {.column width="25%"}
+Other Tools:
+
+- PDF
+
+- SPSS
+
+- SAS
+
+- STATA
+
+- Reference management
+
+:::
+
+::::
 
 ## Research Influencer
 
 <br>
 
-::: {layout-ncol=2 .center}
+:::: {.columns}
 
-![Focus on Content](https://media0.giphy.com/media/l3nWhI38IWDofyDrW/giphy.gif?cid=ecf05e47p6ixb5zdcapti83ce4btewlcysoqtgv9jmpp3p6o&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+::: {.column width="50%"}
+![](https://media2.giphy.com/media/uudzUtVcsLAoo/giphy.gif?cid=ecf05e47fkaog688v6ft2g7rjkhz2oficp1uf3puupiag8ox&ep=v1_gifs_search&rid=giphy.gif&ct=g){width=100%}
+:::
 
-![Less clerical work](https://media1.giphy.com/media/llKJGxQ1ESmac/giphy.gif?cid=ecf05e47bmc75vggl780dgo5mjj3r753sej5cq7bcwa7xy67&ep=v1_gifs_search&rid=giphy.gif&ct=g)
+::: {.column width="50%"}
+
+<br>
+
+[👀 Focus on Content.]{.r-fit-text}
+
+<br>
+
+[💅 Set Yourself Apart.]{.r-fit-text}
 
 :::
 
-##
+::::
 
-Day 1: More Content, Less Clerical.
+## Workshop Schedule
 
-Day 2: Set Yourself Apart
+<br>
 
-## More Content, Less Clerical
+::: {.panel-tabset}
 
-## References
+### DAY 1
+
+#### Focus on Content:
+
+[🎃 09 AM to 11 am - Introduction to R & RStudio]{.r-fit-text}
+
+[🎃 02 pm to 04 pm - Reproducible Documents using Quarto]{.r-fit-text}
+
+### DAY 2
+
+#### Set Yourself Apart:
+
+[🎃 09 AM to 11 AM - Introduction to GitHub]{.r-fit-text}
+
+[🎃 02 PM to 04 PM - Website using Quarto]{.r-fit-text}
+
+:::
+    
+# {background-image="images/basics.jpg"  background-size="cover" #sec-basics}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+:::
+
+::: {.column width="60%"}
+[R and<br>RStudio]{.r-fit-text .theme-navy-blue .right}
+:::
+
+::::
+
+[Background image by [Leohoho](https://unsplash.com/@leohoho)]{.small}
+
+#  {background-image="images/exploder.gif" background-position="center" background-size="contain" .inverse}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+::: aside
+[Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}
+:::
+
+## R Programming Language
+
+<br> <br>
+
+::: columns
+::: {.column width="30%"}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1920px-R_logo.svg.png)
+:::
+
+::: {.column width="70%"}
+<br> 
+
+"R is a free software environment for statistical computing and graphics."[^1]
+:::
+:::
+
+[^1]: [Source: R for Data Science, 2e](https://r4ds.hadley.nz/intro)
+
+## R's History
+
+::: nonincremental
+-   Initially developed as **S** language by Bells Labs.
+
+-   First appeared in August 1993 as **R** language by:
+:::
+
+::: columns
+::: {.column width="50%"}
+`Ross Ihaka`<br>(New Zealand Statistician)
+
+![](https://cdn.auckland.ac.nz/aem/content/auckland/en/science/about-the-faculty/department-of-statistics/ihaka-lecture-series/_jcr_content/leftpar/imagecomponent/image.img.480.low.jpg/1561079330278.jpg)
+:::
+
+::: {.column width="50%"}
+`Robert Gentleman`<br>(Canadian Statistician)
+
+![](https://www.computerhope.com/people/pictures/robert_gentleman.jpg){width="350"}
+:::
+:::
+
+## R is FREE
+
+[Download](https://cran.r-project.org/mirrors.html) R from CRAN
+
+![](images/cran.png)
+
+## R console
+
+::: columns
+::: {.column width="50%"}
+<br>
+
+-   R version 4.3.1 (2023-06-16)
+
+-   R name "Beagle Scouts"
+
+-   R licence "ABSOLUTELY NO WARRANTY"
+
+-   R prompt `>|`
+:::
+
+::: {.column width="50%"}
+![](images/r-console.png){height="650" width="500"}
+:::
+:::
+
+## Don't save workspace image
+
+::: columns
+::: {.column width="50%"}
+<br>
+
+-   It helps in "freshly minted R sessions".
+
+-   "put more trust in your script than in your memory".
+:::
+
+::: {.column width="50%"}
+![](images/r-close.png){height="650" width="500"}
+:::
+:::
+
+::: aside
+[Source: R Bloggers](https://www.r-bloggers.com/2017/04/using-r-dont-save-your-workspace/)
+:::
+
+#  {.inverse}
+
+[OPERATORS]{.r-fit-text}
+
+## Operators
+
+> "Operators are used to perform operations on variables and values."
+
+<br>
+
+`12 + 3` in this code `+` is an operator.
+
+<br>
+
+::: {.callout-tip}
+Put spaces between and around operators (`=+-*/`)
+:::
+
+::: aside
+Source: [w3schools](https://www.w3schools.com/r/r_operators.asp)
+:::
+
+<!-- ## Types of R Operators: -->
+
+<!-- -   Arithmetic operators -->
+<!-- -   Assignment operators -->
+<!-- -   Comparison operators -->
+<!-- -   Logical operators -->
+<!-- -   Miscellaneous operators -->
+
+## R arithmetic operators
+
+Arithmetic operators are used with numeric values to perform common mathematical operations:
+
+<br>
+
+| Operator | Name           | Example |
+|----------|----------------|---------|
+| `+`      | Addition       | x + y   |
+| `-`      | Subtraction    | x - y   |
+| `*`      | Multiplication | x \* y  |
+| `/`      | Division       | x / y   |
+| `^`      | Exponent       | x \^ y  |
+
+## R console {.center}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: number
+#| eval: false
+7
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: number
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R console: Addition {.center}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: add
+#| eval: false
+2 + 1
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: add
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R console: Subtraction {.center}
+
+<br>
+
+::: columns
+
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: subtract
+#| eval: false
+10 - 2
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: subtract
+#| echo: false
+#| output: asis
+```
+:::
+
+:::
+
+## R console: Multiplication {.center}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: multiply
+#| eval: false
+12 * 4
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: multiply
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R console: Division {.center}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: division
+#| eval: false
+25 / 5
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: division
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R comparison operators
+
+Comparison operators are used to compare two values:
+
+<br>
+
+| Operator | Name                     | Example |
+|----------|--------------------------|---------|
+| `==`     | Equal                    | x == y  |
+| `!=`     | Not equal                | x != y  |
+| `>`      | Greater than             | x > y   |
+| `<`      | Less than                | x < y   |
+| `>=`     | Greater than or equal to | x >= y  |
+| `<=`     | Less than or equal to    | x <= y  |
+
+
+## R console: Logic {.center}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: logic1
+#| eval: false
+4 == 5
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: logic1
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R console: Logic {.center}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: logic2
+#| eval: false
+67 > 60
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: logic2
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R console {.center}
+
+<br>
+
+::: columns
+::: {.column width="75%"}
+### [Code]{.center}
+
+```{r}
+#| label: calci5
+#| eval: false
+3434 + 343453 * 2323 / 534 - 1000
+```
+:::
+
+::: {.column width="25%"}
+### [Output]{.center}
+
+```{r}
+#| label: calci5
+#| echo: false
+#| output: asis
+```
+:::
+
+<br> 
+<br>
+
+::: callout-important
+R follows the BODMAS (bracket, order, division, multiplication, addition and subtraction) rule to solve mathematical equations.
+:::
+:::
+
+## Plot using R
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: plot1
+#| eval: false
+plot(1:100)
+```
+
+<br>
+<br>
+
+::: {.callout-important}
+R Miscellaneous Operators: Miscellaneous operators are used to manipulate data.
+
+|          |                                           |            |
+|----------|-------------------------------------------|------------|
+| Operator | Description                               | Example    |
+| `:`      | Creates a series of numbers in a sequence | x <- 1:10  |
+
+:::
+
+### Output
+
+```{r}
+#| label: plot1
+#| echo: false
+#| output: asis
+```
+:::
+
+## 😏 That's okay but how to$...$
+
+::: nonincremental
+-   combine plot, text, tables and images in a single file.
+
+-   publish my work online or convert into a word, pdf or html file.
+
+-   work efficiently with my different projects and save, share and track them.
+:::
+
+# {transition="zoom" transition-speed="slow" .center}
+
+[🔥 WE NEED A SUPERHERO 🔥]{.r-fit-text}
+
+![](https://media3.giphy.com/media/o6FWop1Gbuyly/giphy.gif?cid=ecf05e474i92dhzes35zr0jtervmdixne1moeehvvtnntmm8&ep=v1_gifs_related&rid=giphy.gif&ct=g){fig-align="center"}
+
+# {.inverse .center}
+
+![](images/logo-rstd.png){height=150}
+
+[
+[S]{.rainbow-orange}
+[T]{.rainbow-yellow}
+[U]{.rainbow-green}
+[D]{.rainbow-indigo}
+[I]{.rainbow-red}
+[O]{.rainbow-purple}
+]{.r-fit-text}
+
+## posit, earlier RStudio
+
+<br>
+
+::: columns
+::: {.column width="70%"}
+-   RStudio is an integrated development environment (IDE) for R and Python.
+
+-   As per posit, RStudio is "the most trusted IDE for open source data science".
+
+- [Download](https://posit.co/download/rstudio-desktop/) RStudio.
+:::
+
+::: {.column width="30%"}
+![](https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png){fig-align="center"} ![](images/posit-logo.svg)
+:::
+:::
+
+::: aside
+Source: [posit](https://posit.co/products/open-source/rstudio/)
+:::
+
+## RStudio IDE {.center}
+
+![](images/rstd_ide.png){.r-stretch}
+
+## RStudio IDE
+
+"It includes a console, syntax-highlighting editor that supports direct code execution, and tools for plotting, history, debugging, and workspace management." [Source: posit](https://posit.co/products/open-source/rstudio/)
+
+![](images/rstd_ide.png){fig-align="center"}
+
+## [RStudio $\rightarrow$ Tools $\rightarrow$ Global Options]{.r-fit-text .center}
+
+![](images/rstd_options1.png){fig-align="center"}
+
+## [RStudio $\rightarrow$ Tools $\rightarrow$ Global Options]{.r-fit-text .center}
+
+![](images/rstd_options2.png){fig-align="center"}
+
+
+## R & RStudio {.center}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### Imagine R as a powerful engine
+
+<br>
+
+[{{< fa gear size=7x >}}]{.theme-red}
+:::
+
+::: {.column width="50%"}
+### and RStudio as a stylish car
+
+<br>
+
+[{{< fa car size=7x >}}]{.theme-blue}
+:::
+:::
+
+#  {.inverse .center}
+
+![](images/project-logo.png)
+
+[PROJECT]{.r-fit-text}
+
+## Open RStudio {.center}
+
+![](images/rstd-proj.png)
+
+## RStudio without project {.center}
+
+![](images/rstd-proj-none.png)
+
+## RStudio without project {.center}
+
+![](images/rstd-proj-folders.png)
+
+## RStudio projects helps: {background-image="images/r-projects.jpg" background-size="55%" background-position="bottom right"}
+
+::: columns
+::: {.column width="100%"}
+-   "to divide your work into multiple contexts, each with their own"
+    -   working directory,
+    -   workspace,
+    -   history, and
+    -   source documents."
+:::
+:::
+
+::: aside
+Source: [RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects) & Artwork by [Allison Horst](https://www.allisonhorst.com/)
+:::
+
+## {background-color="#9FE2BF"}
+
+[⛷️ Create <br> RStudio Project <br> in 4 Steps ⛷️]{.r-fit-text .center}
+
+## Create RStudio Project {.center}
+
+![](images/rstd_proj1.png)
+
+## Create RStudio Project {.center}
+
+![](images/rstd_proj2.png)
+
+## [In case anything go wrong$...$]{.theme-red} {.center}
+
+![](images/rstd_proj3.1.png)
+
+## Create RStudio Project {.center}
+
+![](images/rstd_proj3.png)
+
+## Create RStudio Project {.center}
+
+![](images/rstd_proj4.png)
+
+## Create RStudio Project {.center}
+
+![](images/rstd_proj4a.png)
+
+## Create RStudio Project {.center}
+
+![](images/rstd_proj4b.png)
+
+## Create RStudio Project {.center}
+
+![](images/rstd_proj4c.png)
+
+## RStudio Project "name" {.center}
+
+![](images/rstd_proj_name.png)
+
+## RStudio Project "path" {.center}
+
+![](images/rstd_proj_path1.png)
+
+## RStudio Project {.center}
+
+![](images/rstd_proj_path2.png)
+
+
+# {.inverse .center}
+
+![](images/code_hero.gif)
+
+::: {aside}
+[Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}
+:::
+
+## Write R codes in
+
+> R Console
+
+!["The code input and output are in the R console"](images/code-console.png){height="500"}
+
+## Write R codes in
+
+> R script in RStudio
+
+![](images/code-script.png)
+
+## Write R codes in
+
+> Quarto document in RStudio
+
+![](images/code-quarto.png)
+:::
+
+## R script (.R)
+
+> Write codes in the R script $\rightarrow$ Console will show the results.
+
+-   Benefits of writing codes in R script:
+    -   You can save it for later use and revision.
+    -   You can share with others.
+    -   A better track of codes.
+
+## 💡 Tips for R script
+
+1.  Writing readable code because other people might need to use your code.
+
+2.  Writing readable code because you might need to use your code, a few weeks/months/years after you've written it.
+
+3.  Put spaces between and around variable names and operators (`=+-*/`).
+
+4.  Break up long lines of code.
+
+5.  Keeping a consistent style.
+
+::: aside
+Source: [Marius Mather](https://bookdown.org/marius_mather/Rad/tips-for-effective-r-programming.html) also [Tomaž Kaštrun](https://tomaztsql.wordpress.com/2023/01/31/tips-for-organising-your-r-code/)
+:::
+
+#  {.inverse}
+
+![](images/rainbowr.gif){fig-align="center"}
+
+[FUNCTION]{.r-fit-text .center}
+
+::: {aside}
+[Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}
+:::
+
+## R function
+
+-   "A function, in a programming environment, is a set of instructions."
+
+-   "A programmer builds a function to avoid repeating the same task, or reduce complexity."
+
+## R function
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: fun-round1
+#| eval: false
+
+round(24.3454, 3)
+```
+
+<br>
+
+`round(argument 1, argument 2)`
+
+### Output
+
+```{r}
+#| label: fun-round1
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Structure of R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str1.png)
+
+## Structure of R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str2.png)
+
+## Structure of R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str3.png)
+
+## Structure of R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str4.png)
+
+## Structure of R function {.center transition="fade"}
+
+<br>
+
+![](images/function_str5.png)
+
+<!-- ## Structure of R function {.center background-image="images/function-args.png" background-size="80%"} -->
+
+## Round function
+
+::: panel-tabset
+### Code
+
+Function with default argument.
+
+```{r}
+#| label: fun-round2
+#| eval: false
+
+round(46.487)
+```
+
+### Output
+
+```{r}
+#| label: fun-round2
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Round function
+
+::: panel-tabset
+### Code
+
+Function with a specific value of an argument.
+
+```{r}
+#| label: fun-round3
+#| eval: false
+
+round(46.587, digits = 2)
+```
+
+### Output
+
+```{r}
+#| label: fun-round3
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Square root function
+
+::: panel-tabset
+### Code
+
+Function with a specific value of an argument.
+
+```{r}
+#| label: fun-sqrt
+#| eval: false
+
+sqrt(x = 9)
+```
+
+### Output
+
+```{r}
+#| label: fun-sqrt
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Sequence function
+
+::: panel-tabset
+### Code
+
+Function with a specific value of an argument.
+
+```{r}
+#| label: fun-seq
+#| eval: false
+
+seq.int(from = 10, to = 30, by = 5)
+```
+
+or
+
+```{r}
+#| label: fun-seq1
+#| eval: false
+
+seq.int(from = 10,
+        to = 30,
+        by = 5)
+```
+
+### Output
+
+```{r}
+#| label: fun-seq
+#| echo: false
+#| output: asis
+
+```
+:::
+
+#  {.inverse}
+
+![](images/stormyr.gif){fig-align="center"}
+
+[COMMENT]{.r-fit-text .center}
+
+::: {aside}
+[Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}
+:::
+
+## Comment:
+
+-   "Humans will be able to read the comments, but your computer will pass over them."
+
+-   In R, `#` is used as a commenting symbol.
+
+::: aside
+[Source](https://en.wikipedia.org/wiki/Comment_computer_programming)
+:::
+
+#  {.inverse}
+
+![](images/pkgs-space.png){fig-align="center"}
+
+[PACKAGES]{.r-fit-text}
+
+## R packages {background-image="https://miro.medium.com/v2/resize:fit:732/1*qVn_OyvyHA6AG2gaQkTXfA.png" background-opacity="0.15" background-size="contain" background-position="right"}
+
+"An R package is a collection of functions, data, and documentation that extends the capabilities of base R. Using packages is key to the successful use of R."[^3]
+
+[^3]: [Source: R for Data Science, 2e](https://r4ds.hadley.nz/intro)
+
+## R packages 
+
+![](images/metacran.png){.r-stretch}
+
+::: aside
+<br>Source: [Metacran](https://www.r-pkg.org/)
+:::
+
+## Install packages {.center}
+
+![](images/pkg-download1.png)
+
+## Name of the packages {.center}
+
+![](images/pkg-download2.png)
+
+## Installed packages {.center}
+
+![](images/pkg-download3.png)
+
+## Function to install packages
+
+<br>
+
+```{r}
+#| eval: false
+
+install.packages("tidyverse")
+```
+
+## Function to call package
+
+<br>
+
+```{r}
+#| eval: false
+
+library(tidyverse)
+```
+
+## Using packages
+
+-   You need to install package only once like:
+
+    -   📚 We buy books once and use them again and again
+
+    -   💡 Fix the bulb once and use it again and again.
+
+## Using packages
+
+-   In every R document you need to **call once** the package using function `library()`, for example library(ggplot2).
+
+-   Once in a while, you need to update the installed packages as well.
+
+-   If you un-install R or RStudio, you will lose all installed packages.
+
+## Tools $\rightarrow$ package updates {.center}
+
+![](images/update-pkg1.png)
+
+## Select packages to update {.center}
+
+![](images/update-pkg2.png)
+
+## Click install updates {.center}
+
+![](images/update-pkg3.png)
+
+## To remove packages {.center}
+
+![](images/remove-pkg.png)
+
+#  {.inverse}
+
+![](images/heartyr.gif){fig-align="center"}
+
+[OBJECTS]{.r-fit-text}
+
+::: {aside}
+[Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}
+:::
+
+## R object
+
+<br>
+
+> Just a name that you can use to call up stored data.
+
+<br>
+
+::: {.callout-important}
+R assignment operators: Assignment operators are used to assign values to variables.
+
+`my_var <- 3`
+
+`my_var # print my_var`
+:::
+
+::: aside
+Source: [Garrett Grolemund](https://rstudio-education.github.io/hopr/basics.html#objects)
+:::
+
+## Create object
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: age
+#| eval: false
+age <- c(23, 25, 16, 40, 34)
+
+age
+```
+
+### Output
+
+```{r}
+#| label: age
+#| output: asis
+#| echo: false 
+```
+:::
+
+## Create object
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: income
+#| eval: false
+income <- c(23000, 25000, 16000, 4000, 34000)
+
+income
+```
+
+### Output
+
+```{r}
+#| label: income
+#| output: asis
+#| echo: false 
+```
+:::
+
+## Create object
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: name
+#| eval: false
+name <- c("Bhim", "Rama", "Sara", "Phule", "Savitri")
+
+name
+```
+
+### Output
+
+```{r}
+#| label: name
+#| output: asis
+#| echo: false 
+```
+:::
+
+## Create object
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: place
+#| eval: false
+place <- c("MH", "RJ", "DL", "HR", "HR")
+
+place
+```
+
+### Output
+
+```{r}
+#| label: place
+#| output: asis
+#| echo: false 
+```
+:::
+
+## Create object
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: weight
+#| eval: false
+weight_kg <- c(50, 52, 61, 40, 70)
+
+weight_kg
+```
+
+### Output
+
+```{r}
+#| label: weight
+#| output: asis
+#| echo: false 
+```
+:::
+
+## 💡 Guidelines to name R objects
+
+-   a name cannot start with a number.
+
+-   a name cannot use some special symbols, like `^`, `!`, `$`, `@`, `+`, `-`, `/`, or `*`,`:`.
+
+-   avoid caps.
+
+-   avoid space.
+
+-   use dash (like weight-kg) or underscore (like weight_kg).
+
+-   if chronology matters then add date (2020-09-05-file-name).
+
+## RStudio environment window
+
+<br>
+
+![](images/rstd-env.png)
+
+[🤔 How to combine all these objects and form a data set?]{.r-fit-text .fragment .theme-red}
+
+## 👇 something like this 😻😻
+
+<br>
+
+```{r}
+#| echo: false
+
+example_df <- data.frame(name, income, age, place, weight_kg)
+
+example_df
+```
+
+## How to create a data object?
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: df
+#| eval: false
+example_df <- data.frame(name, income, age, place, weight_kg)
+
+example_df
+```
+
+### Output
+
+```{r}
+#| label: df
+#| output: true
+#| echo: false 
+```
+:::
+
+## Export data set as a `csv` file
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: export-csv
+#| eval: false
+
+library(readr)
+
+# create a folder in wd & name it "data"
+write_csv(example_df, "data/example_df.csv") 
+```
+
+### Output
+
+```{r}
+#| label: export-csv
+#| output: asis
+#| echo: false 
+```
+
+To see the created file, check the "data" folder in your working directory.
+:::
+
+## List of all objects
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: objects-list
+#| eval: false
+
+objects()
+```
+
+### Output
+
+```{r}
+#| label: objects-list
+#| output: asis
+#| echo: false 
+```
+:::
+
+#  {.inverse}
+
+![](images/breakr.gif){fig-align="center"}
+
+[COMMUNITY]{.r-fit-text}
+
+::: {aside}
+[Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}
+:::
+
+## Help Using console `>`
+
+### in console type `?your query`
+
+-   for example `?knitr`.
+
+-   for example `?mtcars`.
+
+-   for example `?dplyr`.
+
+## RStudio: package website {.center}
+
+<br>
+
+![](images/help-cran.png)
+
+## [Post community](https://community.rstudio.com/latest) {.center}
+
+![](images/help-posit.png)
+
+## [Stack Overflow](https://stackoverflow.com/) {.center}
+
+![](images/help-stack.png)
+
+## [GitHub](https://github.com/) {.center}
+
+![](images/help-git.png)
+
+## Social Media #RStats {.center}
+
+![](images/help-tweet.png){fig-align="center"}
+
+## {background-image="images/code_hero.jpg" background-size="contain" background-position="center"}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+::: {aside}
+[Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}
+:::
+    
+## References {.scrollable}
 
 - Title slide background image is from [Joanna Kosinska](https://unsplash.com/photos/white-baubles-and-sleigh-bells-0CQfTLOVTPU).
+
+- R for Data Science (2e) by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. [ebook link](https://r4ds.hadley.nz/)
+
+- R bloggers <https://www.r-bloggers.com/>
+
+- The R Project for Statistical Computing <https://www.r-project.org/>
+
+- posit (earlier RStudio) <https://posit.co/>
+
+- R packages for data science <https://www.tidyverse.org/>
+
+# {background-image="https://images.unsplash.com/photo-1553379762-ff913d5513b5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover"}
+
+:::: {.columns}
+
+::: {.column width="70%"}
+[Thank<br>You]{.r-fit-text .theme-cursive .theme-navy-blue}
+:::
+
+::::
+
+::: aside
+[Background image by [Oh Tilly](https://unsplash.com/photos/white-flowers-B8_YF4fjPwo)]{.small}
+:::
+
